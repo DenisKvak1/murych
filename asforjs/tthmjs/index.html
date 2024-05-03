@@ -133,15 +133,7 @@
 						() => (
 							doSetBlackText( theNumberUntilTheBadaBoom-- )
 							|| (
-								(
-									doCheckOfDocumentState( document.readyState )
-										? doSetRedText( theTextAboutBadaBoom )
-										: (
-											doCheckOfDocumentState( document.readyState )
-												? doSetGreenText( theTextAboutDeactivation )
-												: doSetRedText( theTextAboutBadaBoom )
-										)
-								)
+								doSetGreenText( theTextAboutDeactivation )
 								, false
 							)
 						)
